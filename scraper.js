@@ -1031,7 +1031,7 @@ async function checkProxy(url, userAgent) {
             },
             timeout: 5000 // Timeout request dalam milidetik
         });
-        if (response.status === 30000) {
+        if (response.status === 1000) {
             console.log(`Proxy aktif ditemukan: ${url}`);
             activeProxies.push(url);
             if (activeProxies.length === totalProxiesToSave) {
